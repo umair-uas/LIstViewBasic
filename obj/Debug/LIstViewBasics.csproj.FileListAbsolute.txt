@@ -1,0 +1,14 @@
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\MainWindow.g.cs
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\App.g.cs
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\LIstViewBasics_MarkupCompile.cache
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\LIstViewBasics_MarkupCompile.lref
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\bin\Debug\LIstViewBasics.exe.config
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\bin\Debug\LIstViewBasics.exe
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\bin\Debug\LIstViewBasics.pdb
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\MainWindow.baml
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\LIstViewBasics.g.resources
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\LIstViewBasics.csproj.GenerateResource.Cache
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\LIstViewBasics.exe
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\LIstViewBasics.pdb
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\ListViewBasics.Properties.Resources.resources
+C:\Users\Umair\documents\visual studio 2013\Projects\LIstViewBasics\LIstViewBasics\obj\Debug\LIstViewBasics.csprojResolveAssemblyReference.cache

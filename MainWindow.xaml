@@ -1,0 +1,145 @@
+﻿<Window x:Class="ListViewBasics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListViewBasics"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="List of Communication Protocols " Height="800" Width="500">
+    
+    <Border Padding="10">
+        <StackPanel >
+            
+            <!--Buttons-->
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="ApplyButton" Click="ApplyButton_Click" Margin="0 0 10 0" Grid.Column="0" Content="Apply"/>
+                <Button x:Name="ResetButton" Click="ResetButton_Click" Margin="10 0 10 0" Grid.Column="1" Content="Reset"/>
+                <Button Margin="10 0 0 0" Grid.Column="2" Content="Refresh"/>
+            
+            </Grid>
+            
+            <TextBlock Text="Network Protocols" FontWeight="Bold" Margin="0 10"/>
+           <!--Description-->
+            <TextBlock Text="Description" />
+            <TextBox  x:Name ="DescriptionText"  Padding="2" />
+
+
+            <!--Protocol Used Current Version -->
+            <Grid> 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+
+
+                </Grid.ColumnDefinitions>
+                <!--Protocol Used-->
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <TextBlock Text="Protocol Used" />
+                    <TextBox IsReadOnly="True" Background="#eee" Padding="2" />
+                </StackPanel>
+               
+                <!--Current Version-->
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Current Version" />
+                    <TextBox IsReadOnly="True" Background="#eee" Padding="2" />
+                </StackPanel>
+                
+            </Grid>
+            
+            <!--Protocol Stack-->
+            <TextBlock Text="Protocol Stack " />
+            <TextBox  IsEnabled="False" Background="#eee" Padding="2" />
+
+            <!--Wireless Sensor Network-->
+            <TextBlock Text="Wireless Sensor Network" FontWeight="Bold" Margin="0 10"/>
+            <!--IoT/I4.0-->
+            <TextBlock Text="Industrial Intenet of Thing/Industrie 4.0" />
+            <ComboBox SelectionChanged="IoTDropDown_SelectionChanged"  SelectedIndex="0"  x:Name="IoTDropDown" Padding="2">
+                <ComboBoxItem>IoT</ComboBoxItem>
+                <ComboBoxItem>Industrie4.0</ComboBoxItem>
+                <ComboBoxItem>LoRa/SigFox</ComboBoxItem>
+                <ComboBoxItem>NB-IoT</ComboBoxItem>
+            </ComboBox>
+           
+            <!--Communication Protocols and Standards-->
+            <TextBlock Text="Communication Protocols and Standards" FontWeight="Bold" Margin="0 10"/>
+           
+            <!--Standard Body-->
+            <TextBlock Text="IEEE and IETF" Margin="0 0 0 10" />
+           
+            <!--Checkboxes -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!--Column1-->
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <CheckBox  Checked="CheckBox_Checked" x:Name="WCheckBox" Content="WLAN"/>
+                    <CheckBox Checked="CheckBox_Checked" x:Name="BCheckBox" Content="Bluetooth 4.0"/>
+                    <CheckBox Checked="CheckBox_Checked" x:Name="NCheckBox" Content="802.11n"/>
+                    <CheckBox Checked="CheckBox_Checked" x:Name="LCheckBox" Content="LTE"/>
+                    <CheckBox Checked="CheckBox_Checked" x:Name="UCheckBox" Content="UMTS/3G"/>
+                    
+                </StackPanel>
+                <!--Column2-->
+               
+                <StackPanel Grid.Column="1">
+                    <CheckBox  Checked="CheckBox_Checked" x:Name="TCheckBox" Content="TCP/IP"/>
+                    <CheckBox Checked="CheckBox_Checked" x:Name="ZCheckBox" Content="Zigbee"/>
+                    <CheckBox Checked="CheckBox_Checked" x:Name="LowCheckBox" Content="802.15.4"/>
+                    <CheckBox Checked="CheckBox_Checked" x:Name="HartCheckBox" Content="WirelessHART"/>
+                    <CheckBox Checked="CheckBox_Checked" x:Name="NBCheckBox" Content="NB-IoT"/>
+                    
+                </StackPanel>
+                
+
+            </Grid>
+
+            <!--Selected Protocols-->
+            <TextBlock Text="Selected Protocols" />
+            <TextBox x:Name="SelectedProtocolsText" Padding="2" />
+
+            <!--IETF RFC Reference-->
+            <TextBlock Text="IETF RFC Reference " />
+            <TextBox x:Name="IRRText" IsEnabled="False" Background="#eee" Padding="2" />
+
+            <!--Protocol Standard-->
+            <TextBlock Text="Protocol Standard" />
+            <ComboBox SelectionChanged="FinishDropDown_SelectionChanged" x:Name="ProtocolStandardDropdown" SelectedIndex="0" Padding="2">
+                <ComboBoxItem>Ethernet</ComboBoxItem>
+                <ComboBoxItem>WLAN</ComboBoxItem>
+                <ComboBoxItem>LTE</ComboBoxItem>
+                <ComboBoxItem>UMTS</ComboBoxItem>
+            </ComboBox>
+
+            <!--Transport Layer-->
+            <TextBlock Text="Transport Layer" />
+            <ComboBox SelectionChanged="TransportLayerDropdown_SelectionChanged" x:Name="TransportLayerDropdown" SelectedIndex="0" Padding="2">
+                <ComboBoxItem>TCP</ComboBoxItem>
+                <ComboBoxItem>UDP</ComboBoxItem>
+            </ComboBox>
+
+            <!--IETF RFC-->
+            <TextBlock Text="IETF RFC " />
+            <TextBox  x:Name="IETFRFCText" TextChanged="IETFRFCText_TextChanged" Padding="2" />
+
+            <!--Selected Communication Protocol/Standard"-->
+            <TextBlock Text="Selected Protocol Standard" />
+            <TextBox  x:Name="PText"  Padding="2" />
+
+            <!--Selected Transport Layer Protocol-->
+            <TextBlock Text="Transport Layer Protocol" />
+            <TextBox x:Name="TLText" Padding="2" />
+            
+        </StackPanel>
+    </Border>
+</Window>
